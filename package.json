@@ -22,10 +22,13 @@
   "dependencies": {
     "@patternfly/react-core": "^4.192.15",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "@openshift/dynamic-plugin-sdk-webpack": "^1.0.0-alpha2",
+    "@openshift/dynamic-plugin-sdk-webpack": "^1.0.0-alpha7",
+    "@openshift/dynamic-plugin-sdk-utils": "^1.0.0-alpha13",
+    "@patternfly/react-table": "^4.93.1",
     "@redhat-cloud-services/eslint-config-redhat-cloud-services": "^1.2.1",
     "@redhat-cloud-services/frontend-components-config": "^4.5.6",
     "@redhat-cloud-services/frontend-components-config-utilities": "^1.5.9",
@@ -33,6 +36,7 @@
     "@testing-library/react": "^12.1.2",
     "@types/jest": "^27.4.0",
     "@types/react": "^17.0.39",
+    "@types/react-helmet": "^6.1.5",
     "@typescript-eslint/eslint-plugin": "^5.11.0",
     "@typescript-eslint/parser": "^5.11.0",
     "eslint": "^8.9.0",
