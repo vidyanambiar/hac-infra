@@ -13,9 +13,6 @@ To use webpack proxy you need to append this to your `/etc/hosts` for auth:
 ```
 127.0.0.1 prod.foo.redhat.com
 127.0.0.1 stage.foo.redhat.com
-127.0.0.1 qa.foo.redhat.com
-127.0.0.1 ci.foo.redhat.com
-
 ```
 
 ### Run plugin locally and see the UI in the browser
