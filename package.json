@@ -20,12 +20,14 @@
     "verify": "npm-run-all build lint coverage"
   },
   "dependencies": {
+    "@openshift/dynamic-plugin-sdk-utils": "^1.0.0-alpha12",
     "@patternfly/react-core": "^4.192.15",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@openshift/dynamic-plugin-sdk-webpack": "^1.0.0-alpha2",
+    "@patternfly/react-table": "^4.93.1",
     "@redhat-cloud-services/eslint-config-redhat-cloud-services": "^1.2.1",
     "@redhat-cloud-services/frontend-components-config": "^4.5.6",
     "@redhat-cloud-services/frontend-components-config-utilities": "^1.5.9",

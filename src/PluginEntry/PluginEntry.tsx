@@ -1,7 +1,8 @@
 import React from 'react';
 import { Title } from '@patternfly/react-core';
-import { NotFound } from '../NotFound';
+// import { NotFound } from '../NotFound';
 import './PluginEntry.scss';
+import { TestListView } from '../TestListView';
 
 const PluginEntry = () => {
   return (
@@ -9,7 +10,8 @@ const PluginEntry = () => {
       <Title className="page-header" headingLevel="h1" data-testid="page-header">
         Welcome to HAC-Infra!
       </Title>
-      <NotFound />
+      <TestListView />
+      {/* <NotFound /> */}
     </div>
   );
 };
