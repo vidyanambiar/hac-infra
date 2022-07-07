@@ -35,10 +35,10 @@ const ResourceList: React.FC<ResourceListProps> = ({ namespace }) => {
     namespace,
   };
 
-  const [listData, setListData] = React.useState<Record<string, string>[]>();
+  const [listData, setListData] = React.useState<Record<string, string>[]>([]);
   const [applications, loaded, error] = useK8sWatchResource(watchedResource);
 
-  let dataForList:Record<string, string>[] = React.useMemo(() => {
+  React.useMemo(() => {
       // Construct data for table
       let tmp:Record<string, string>[] = [];
       if (loaded && Array.isArray(applications)) {
@@ -57,13 +57,11 @@ const ResourceList: React.FC<ResourceListProps> = ({ namespace }) => {
             }
           ];
         });
+        setListData([...tmp] as Record<string, string>[]);
       }
-      return tmp;
   }, [applications, loaded, error]);
 
-  if (dataForList) {
-    setListData(dataForList);
-  }
+  console.log('listData: ', listData);
 
   const columns = [
     {
