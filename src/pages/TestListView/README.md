@@ -20,6 +20,8 @@ This can be tested standalone and via HAC Core:
 #### Note:
 To see the list view populate you will need to create some mock applications via the AppStudio UI.
 
+#### Screenshot:
+![Screenshot](Screenshot.png)
 
 ### Known issues
 There are some known issues with column widths (the contents appear squished together as of now) as well as a checkbox that appears on the first column.
